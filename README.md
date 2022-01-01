@@ -7,4 +7,4 @@ Polynomial Fn : y = A+Bx+Cx^2+....EX^4+… (10 DEGREE POLY = 11 COEFFS), CAN HAV
 for Polynomial Fn
 A,B,C,D,E, – POLY CO-EFFS or CONSTants 
 ![nd](https://user-images.githubusercontent.com/33382424/138983565-80fc48a5-c1fa-45f6-a3ee-6f04ee17a35b.jpg)
-Credits to : Vincent Tai
+Credits to : Vincent Tai CFD
