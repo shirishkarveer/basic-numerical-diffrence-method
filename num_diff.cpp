@@ -1,4 +1,4 @@
-// num_diff.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// num_diff.cpp : This file contains the 'main' function. DESIGN AND WRITE FIRST. Program execution begins and ends there.
 // code compile and run successful in vs 2019. It's a basic finite difference project
 
 #include<iostream>// standard input-output stream. The methods declared in these files are used for manipulating streams. contains definitions of setw, setprecision, etc.
