@@ -7,17 +7,17 @@
 
 using namespace std;
 /*ALGORITHM: math function is rep by the blue curve
-DEFINE POLY DEGREE
+DEFINE POLYNOMIALNOMIAL DEGREE
 DEF CONSTANTS
-CONSTRUCT POLY USING ABOVE 2 STEPS
+CONSTRUCT POLYNOMIAL USING ABOVE 2 STEPS
 DEFINE THE POINT TO DO DIFF
 DO THE DIFFRENTIATION USING EQUATION
 COUT << RESULT
-y = A+Bx+Cx^2+....EX^4+… (10 DEGREE POLY = 11 COEFFS)
+y = A+Bx+Cx^2+....EX^4+… (10 DEGREE POLYNOMIAL = 11 COEFFS)
 y=coef[0]+coef[1]*X^1+....
 */
 
-void dispoly(float coeff[11], int degree) {  //sub-function so that main is not heavy
+void disPOLYNOMIAL(float coeff[11], int degree) {  //sub-function so that main is not heavy
 	for (int i = 0; i <= degree; i++) {
 		if (i == 0) {  //no need of co-eff here since i =0
 			cout << coeff[i] << " + ";
@@ -31,7 +31,7 @@ void dispoly(float coeff[11], int degree) {  //sub-function so that main is not 
 	}
 }
 
-float poly(float coeff[11], float degree, float X ){// creating a sub-fn makes most sense so that we can use it for the top point
+float POLYNOMIAL(float coeff[11], float degree, float X ){// creating a sub-fn makes most sense so that we can use it for the top point
 	float Y = 0.0;
 	for (int i = 0; i <= degree; i++)
 	{
@@ -45,26 +45,26 @@ float poly(float coeff[11], float degree, float X ){// creating a sub-fn makes m
 int main()
 {
 	int degree;
-	cout << "degree of poly:";
+	cout << "degree of POLYNOMIAL:";
 	cin >> degree;
 
-	float coeff[11];		//BECAUSE 10 DEGREE POLY so 11 inside the ARRAY
-	cout << "Input poly constants:" << endl;		//user input for how many constants 
+	float coeff[11];		//BECAUSE 10 DEGREE POLYNOMIAL so 11 inside the ARRAY
+	cout << "Input POLYNOMIAL constants:" << endl;		//user input for how many constants 
 	for (int i = 0; i <= degree; i++) {   //
 		cout << "coeff" << i << ":";			//each one should print out coeff#
 		cin >> coeff[i];		//need to tell program which co-eff like A = coeff 0, B = coeff 1...
 	}
 	
-	dispoly(coeff, degree); // to disp polynomial
+	disPOLYNOMIAL(coeff, degree); // to disp POLYNOMIALnomial
 	 
-	float X;		//contruct the polynomial
+	float X;		//contruct the POLYNOMIALnomial
 	cout << "input value for X for diff: ";
 	cin >> X;
 
-	float y = poly(coeff, degree, X);//
+	float y = POLYNOMIAL(coeff, degree, X);//
 	float h = 0.0001; // need to choose the approriate h  value as lt.X->0, CAN EXPERIMENT WITH THIS VALUE, CURRENT VALUE IS MOST OPTIMAL
 	float X1 = X + h; 
-	float y1 = poly(coeff, degree, X1); 
+	float y1 = POLYNOMIAL(coeff, degree, X1); 
 
 	float slope = (y1 - y) / h; //optimization for consistent slope for Convergence of FD 
 	cout << "slope = " << slope << endl;	
