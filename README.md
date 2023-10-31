@@ -1,6 +1,6 @@
 # num_diff
 Basic numerical diffrentiation with c++. diffrentiation nothing but slope.
-math function is rep by the blue curve.
+math function is rep by the blue curve. 'x' is point to evaluate
 Equation is F’(x ) = lt.h->0((f(x+h)-f(x))/h)).
 
 Reduce h  = should closely resemble exact value of slope = (delta-x/delta-y).
