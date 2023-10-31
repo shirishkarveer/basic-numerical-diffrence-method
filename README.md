@@ -1,5 +1,5 @@
 # num_diff
-Basic numerical diffrentiation with c++
+Basic numerical diffrentiation with c++. diffrentiation nothing but slope.
 math function is rep by the blue curve.
 Equation is F’(x ) = lt.h->0((f(x+h)-f(x))/h)).
 
