@@ -1,7 +1,7 @@
 // num_diff.cpp : This file contains the 'main' function. Program execution begins and ends there.
 // code compile and run successful in vs 2019. It's a basic finite difference project
 
-#include<iostream>
+#include<iostream>// standard input-output stream. The methods declared in these files are used for manipulating streams
 #include<cmath>
 #include"pch.h"//precompiled header file added to project
 
