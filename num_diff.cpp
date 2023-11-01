@@ -17,7 +17,7 @@ y = A+Bx+Cx^2+....EX^4+… (10 DEGREE POLYNOMIAL = 11 COEFFS, 4+3+2+1+1=11 )
 y=coef[0]+coef[1]*X^1+....
 */
 
-void disPOLYNOMIAL(float coeff[11], int degree) {  //sub-function so that main is not heavy
+void displayPOLYNOMIAL(float coeff[11], int degree) {  //sub-function so that main is not heavy
 	for (int i = 0; i <= degree; i++) {
 		if (i == 0) {  //no need of co-eff here since i =0
 			cout << coeff[i] << " + ";
@@ -55,7 +55,7 @@ int main()
 		cin >> coeff[i];		//need to tell program which co-eff like A = coeff 0, B = coeff 1...
 	}
 	
-	disPOLYNOMIAL(coeff, degree); // to disp POLYNOMIALnomial
+	displayPOLYNOMIAL(coeff, degree); // to displayp POLYNOMIALnomial
 	 
 	float X;		//contruct the POLYNOMIALnomial
 	cout << "input value for X for diff: ";
